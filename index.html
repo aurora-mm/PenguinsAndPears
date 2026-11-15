@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Penguins and Pears</title>
+<meta name="description" content="A tiny Transformer, written from scratch, that generates Russian internet rants about pears.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1>Penguins and Pears</h1>
+    <p class="lede">A tiny Transformer, written from scratch, that generates Russian internet rants about pears.<br>It runs entirely in this tab; nothing is sent anywhere.</p>
+  </header>
+
+  <div class="toolbar">
+    <nav class="tabs" role="tablist">
+      <button role="tab" id="tab-generate" aria-controls="panel-generate" aria-selected="true">Generate</button>
+      <button role="tab" id="tab-universe" aria-controls="panel-universe" aria-selected="false">Universe</button>
+      <button role="tab" id="tab-story" aria-controls="panel-story" aria-selected="false">Story</button>
+    </nav>
+    <button id="generate" class="primary" disabled>Generate</button>
+    <button id="random" class="primary" disabled hidden>Random</button>
+  </div>
+
+  <section id="panel-generate" role="tabpanel" aria-labelledby="tab-generate">
+    <article id="post" class="pane" aria-live="polite"></article>
+    <p id="status" class="status" role="status">Loading...</p>
+  </section>
+
+  <section id="panel-universe" role="tabpanel" aria-labelledby="tab-universe" hidden>
+    <article id="u-post" class="pane" aria-live="polite"></article>
+  </section>
+
+  <section id="panel-story" role="tabpanel" aria-labelledby="tab-story" hidden>
+    <article class="pane story">
+      <p>The training data began with 82 culture-war posts by a Russian online troll. Each post was rewritten one for one. Whatever the author despised became <strong>pears</strong>. Whatever he held up as good became <strong>penguins</strong>. Each rewrite kept the original's rhythm, length, paragraph breaks and emotional temperature, right down to the ALL-CAPS bursts, rhetorical questions, mock expertise, P.S. endings, abrupt verdicts and profanity.</p>
+
+      <p><strong>Grievance rhetoric can run on almost any subject.</strong> A rant about pears can follow the same pattern as a rant about immigrants. You still get the us-versus-them framing, the show of reasoning, the pose of someone who's seen it all before, and a verdict handed down without evidence. Change the target and the voice is instantly recognizable.</p>
+
+      <p>It's also a joke. Somebody had to get very angry about pears.</p>
+
+      <p><strong>How much of that pattern can a small language model learn from scratch?</strong> If the cadence carries across subjects, 82 rewrites and variations on them might be enough for a model with about 2.4 million parameters to pick it up.</p>
+
+      <p>The 82 source posts are available here only as pear-and-penguin rewrites.</p>
+    </article>
+  </section>
+
+  <footer>
+    <span id="foot">2,403,840 parameters</span>. Thanks to the unnamed Russian edgelord who inspired the whole thing.
+  </footer>
+</main>
+<script type="module" src="src/app.js"></script>
+</body>
+</html>
