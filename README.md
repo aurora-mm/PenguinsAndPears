@@ -1,6 +1,6 @@
 # Penguins and Pears
 
-A small Transformer, written from scratch, that generates Russian-language internet rants about pears. It runs entirely in the browser tab; nothing is sent anywhere.
+A small Transformer, written from scratch (trained following essentially the [nanoGPT](https://github.com/karpathy/nanoGPT) route) that generates Russian-language internet rants about pears. It runs entirely in the browser tab; nothing is sent anywhere.
 
 The forward pass, attention, sampling and a small batched generation scheduler live in a WebAssembly module; the loader, workers and UI around it are plain JavaScript. Weights ship as a single f16 blob and are unpacked on load.
 
