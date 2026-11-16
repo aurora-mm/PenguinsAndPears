@@ -1,4 +1,4 @@
-# Penguins and Pears
+# Penguins & Pears
 
 A small Transformer, written from scratch (trained following essentially the [nanoGPT](https://github.com/karpathy/nanoGPT) route) that generates Russian-language internet rants about pears. It runs entirely in the browser tab; nothing is sent anywhere.
 
